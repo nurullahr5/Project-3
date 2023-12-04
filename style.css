@@ -455,6 +455,9 @@ footer .foot i:hover{
         margin-left: -20px;
         padding: 30px;
     }
+    .nav{
+        margin-right: 150px;
+    }
     .checkbtn{
         display: block;
     }
