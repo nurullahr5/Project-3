@@ -51,6 +51,17 @@ header{
     color: #8490ff;
     transition: all ease .3s;
 }
+.checkbtn{
+    display: none;
+    font-size: 30px;
+    color: rgba(0,0,0,.9);
+    margin-right: -30px;
+    margin-top: 35px;
+}
+#check{
+    display: none;
+}
+
 .nav ul li ul{
     display: none;
     width: 180px;
@@ -431,3 +442,286 @@ footer .foot i:hover{
     color: #8490ff;
 }
 /*footer end*/
+
+/*Responsive for mobile start*/
+
+/*Responsive for mobile end*/
+@media(max-width:769px){
+    header{
+        width: 100%;
+        height: auto;
+    }
+    .logo{
+        margin-left: -20px;
+        padding: 30px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f9f9ff;
+        top: 54px;
+        left: -200%;
+        transition: all .1s;
+    }
+    .nav ul{
+        line-height: 30px;
+        clear: both;
+        margin-top: 15px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .sec1 {
+        background-color: transparent;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f9f9ff;
+    }
+    .half1 {
+        margin-left: 18px;
+        margin-bottom: -6px;
+    }
+    .half1 h3 {
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+    .half1 h1 {
+        font-size: 11px;
+        margin: 5px 0px;
+        text-transform: uppercase;
+    }
+    .half1 p {
+        font-family: sans-serif;
+        color: #777;
+        font-size: 10px;
+    }
+    .btn1 {
+        background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+        line-height: 18px;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #fff;
+        border: none;
+        transition: all ease .3s;
+        text-transform: uppercase;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        outline: none;
+        font-size: 12px;
+    }
+    .half2 {
+        padding-right: 20px;
+        margin-top: 30px;
+    }
+    .sec2 {
+        width: 100%;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+    }
+    .text2 h2 {
+        color: #222;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-family: "poppins",sans-serif;
+        font-weight: 600;
+        margin-top: -8px;
+        margin-bottom: 0px;
+    }
+    .text2 h4 {
+        color: rgba(12, 12, 12, .6);
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: "poppins",sans-serif;
+    }
+    .text2 p {
+        color: #777;
+        font-size: 10px;
+    }
+    .btn2 {
+        background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+        line-height: 22px;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #fff;
+        border: none;
+        transition: all ease .3s;
+        text-transform: uppercase;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        outline: none;
+        font-size: 10px;
+    }
+    .sec2 div img {
+        width: 75%;
+        margin-top: -10px;
+    }
+    .box1 h1 {
+        font-size: 17px;
+        line-height: 8px;
+    }
+    .box1 p {
+        width: 250px;
+        color: rgb(0, 0, 0, .6);
+        margin: 0 auto;
+        font-size: 8px;
+    }
+    .service i {
+        font-size: 25px;
+        color: rgba(0,0,0,.6);
+        padding: 5px;
+    }
+    .service h1 {
+        color: rgba(0,0,0,.8);
+        font-size: 12px;
+        padding: 0px;
+    }
+    .service h1 {
+        color: rgba(0,0,0,.8);
+        font-size: 12px;
+        padding: 0px;
+    }
+    .service p {
+        color: rgba(0,0,0,.6);
+        font-size: 8px;
+    }
+    .service div {
+        width: 42%;
+        float: left;
+        padding: 5px;
+        margin: -10px 5px;
+    }
+    .sec3 {
+        width: 100%;
+        margin: 0 auto;
+        height: 540px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .sec4 h1 {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 2px;
+    }
+    .sec4 div {
+        text-align: center;
+        font-size: 11px;
+    }
+    .sec4 {
+        display: flex;
+        background-color: #8490ff;
+        color: #fff;
+        width: 100%;
+        height: 130px;
+        justify-content: center;
+        align-items: center;
+    }
+    .ptext h1 {
+        font-size: 14px;
+        color: rgba(33, 33, 33, .9);
+        line-height: 2px;
+    }
+    .sec5 .ptext {
+        text-align: center;
+        font-size: 6px;
+    }
+    .sec5 .ptext {
+        text-align: center;
+        padding: 50px 0px 5px 0px;
+    }
+    .sec6 .pricetext h1 {
+        font-size: 21px;
+        line-height: 0;
+        padding-top: 2px;
+    }
+    .sec6 .pricetext {
+        text-align: center;
+        font-size: 7px;
+    }
+    .sec6 .pricetable div h1 {
+        font-size: 20px;
+        padding-top: 2px;
+    }
+    .sec6 .pricetable div {
+        text-align: center;
+        font-size: 7px;
+    }
+   
+    .sec6 .pricetable {
+        width: 90%;
+        height: 45vh;
+        margin: auto;
+        display: flex;
+    }
+    .sec6 .pricetable div {
+        width: 120px;
+        height: 330px;
+        text-align: center;
+        border: 1px solid rgb(249,249,255);
+        padding: 5px;
+        margin: 5px;
+    }
+    .sec6 .pricetable div .btn3 {
+        outline: none;
+        border: none;
+        background-color: #8490ff;
+        color: white;
+        font-size: 8px;
+        padding: 3px 16px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    footer {
+        width: 100%;
+        height: 30vh;
+        position: relative;
+        top: -410px;
+    }
+    footer h3{
+        font-size: 8px;
+    }
+    footer p{
+        font-size: 6px;
+    }
+    footer input {
+        font-size: 6px;
+        outline: none;
+        border: none;
+        padding: 5px 10px 5px 5px;
+    }
+    footer .btn4 {
+        font-size: 8px;
+        color: #fff;
+        background-color: #8490ff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        padding: 4px 5px;
+    }
+    footer .foot i {
+        font-size: 8px;
+        cursor: pointer;
+        padding: 0px 0px;
+    }
+
+
+}
